@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Trafficking Detection Dashboard</title>
+</head>
+<body>
+    <h1>Drug Trafficking Detection Results</h1>
+    <table border="1">
+        <tr>
+            <th>Platform</th>
+            <th>User</th>
+            <th>Details</th>
+        </tr>
+        {% for item in data %}
+        <tr>-------------------------------------------------------------------------------------
+            <td>{{ item.platform }}</td>
+            <td>{{ item.user }}</td>
+            <td>{{ item.details }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
